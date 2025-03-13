@@ -3,43 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Pendaftaran</title>
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="#" method="post" enctype="multipart/form-data">
-        <fieldset>
-            <legend>Form Pendaftaran</legend>
-            <label for="nama">Nama:</label>
-            <input type="text" id="nama" name="nama"><br><br>
+    <header>
+        <h1>Selamat Datang di Website Sederhana</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Layanan</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
+    <div class="container">
+        <section class="form-container">
+            <h2>Formulir Pendaftaran</h2>
+            <p>Silakan isi formulir di bawah ini untuk mendaftar.</p>
+            <form action="#" method="post">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
 
-            <label>Jenis Kelamin:</label>
-            <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki">
-            <label for="laki-laki">Laki-laki</label>
-            <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
-            <label for="perempuan">Perempuan</label><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label>Hobi:</label>
-            <input type="checkbox" id="musik" name="hobi" value="Musik">
-            <label for="musik">Musik</label>
-            <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
-            <label for="olahraga">Olahraga</label><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
 
-            <label for="kota">Pilih Kota:</label>
-            <select id="kota" name="kota">
-                <option value="Jakarta">Jakarta</option>
-                <option value="Surabaya">Surabaya</option>
-                <option value="Bandung">Bandung</option>
-                <option value="Yogyakarta">Yogyakarta</option>
-            </select><br><br>
+                <label>Jenis Kelamin:</label>
+                <input type="radio" id="laki" name="gender" value="Laki-laki">
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                <label for="perempuan">Perempuan</label>
 
-            <label for="foto">Upload Foto:</label>
-            <input type="file" id="foto" name="foto"><br><br>
+                <label>Hobi:</label>
+                <input type="checkbox" id="musik" name="hobi" value="Musik">
+                <label for="musik">Musik</label>
+                <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+                <label for="olahraga">Olahraga</label>
+                <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+                <label for="membaca">Membaca</label>
 
-            <button type="submit">Daftar</button>
-        </fieldset>
-    </form>
+                <label for="kota">Pilih Kota:</label>
+                <select id="kota" name="kota">
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Surabaya">Surabaya</option>
+                    <option value="Bandung">Bandung</option>
+                </select>
+
+                <label for="pesan">Pesan Tambahan:</label>
+                <textarea id="pesan" name="pesan" placeholder="Tulis pesan di sini..."></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan.</p>
+        </aside>
+    </div>
 </body>
 </html>
